@@ -1,0 +1,52 @@
+@import url('https://rsms.me/inter/inter.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-teal-accent {
+  color: #4bacc9;
+}
+
+.section-card {
+  @apply bg-primary-700 rounded-2xl p-8 text-white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.module-container {
+  @apply min-h-screen bg-gradient-to-br from-primary-800 via-primary-700 to-primary-900;
+}
+
+.card-input {
+  @apply w-full px-4 py-3 rounded-lg bg-primary-600 text-white placeholder-primary-300 border-2 border-transparent focus:border-accent-500 focus:outline-none transition;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-accent-500 text-white font-semibold rounded-lg hover:bg-accent-600 transition;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-500 transition border-2 border-primary-500;
+}
